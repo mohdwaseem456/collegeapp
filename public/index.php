@@ -13,6 +13,7 @@ $router->post('/login', [
     'action' => 'Src\Controllers\AuthController@login'
 ]);
 
+
 $router->post('/logout', [
     'action' => 'Src\Controllers\AuthController@logout'
 ]);
