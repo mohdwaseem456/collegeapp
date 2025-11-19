@@ -1,0 +1,11 @@
+# public/.htaccess
+
+RewriteEngine On
+RewriteBase /college/public/
+
+# If the request is a real file or directory, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise, forward request to index.php
+RewriteRule ^ index.php [QSA,L]
